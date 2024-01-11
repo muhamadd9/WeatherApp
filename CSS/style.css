@@ -1,0 +1,154 @@
+:root{
+    --main-color : #1E202B ;
+    --second-color: #009ad8 ;
+    --black-color : black ; 
+    --white-color  :white ; 
+    --third-color :#262936; 
+}
+
+
+/* Navbar */
+
+.bg-body-main{
+    background-color: var(--main-color);
+    
+}
+.navbar-nav .nav-link.active{
+    color: var(--second-color);
+    border: 2px solid var(--second-color);
+    border-radius: 30px;   
+}
+.navbar-nav .nav-link{
+    color: var(--white-color);
+    font-size: 14px;
+    border: 2px solid transparent;
+    border-radius: 30px;  
+    transition: 0.3s; 
+}
+.navbar-nav .nav-link:hover{
+    color: var(--second-color);
+    border: 2px solid var(--second-color);
+    border-radius: 30px;   
+
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 0;
+}
+/* Header */
+
+/* Search side */
+
+.header .search-side{
+    background-image: url(../Images/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+.header .search-side input[type ="text"]{
+    background-color: var(--main-color);
+    padding: 15px 15px;
+    border: 0;
+    color: white;
+}
+.header .search-side input::placeholder{
+    color: rgba(255, 255, 255, 0.506);
+    font-size: 13px;
+
+}
+.header .search-side input[type ="submit"]{
+    background-color: var(--second-color);
+    color: var(--white-color);
+    right: 5px;
+    top: 5px;
+    border: 0;
+    padding: 10px 40px;
+}
+
+/* weather Table */
+
+.header .weather-table{
+    background-color: var(--main-color);
+}
+
+.header .weather-table .row {
+
+    margin-top: -150px;
+}
+
+.col-lg-4{
+    color: #bfc1c8;
+}
+.col-title{
+    background-color: #2D303D;
+}
+.col-title{
+    background-color: #2D303D;
+}
+.col-body{
+    background-color: #323544;
+}
+.col-title-second{
+    background-color: #222530;
+}
+.col-body-second{
+    background-color: var(--third-color);
+}
+
+.degree-number{
+    font-size: 70px;
+}
+.weather-state{
+    color: var(--second-color);
+}
+
+
+/* Footer */
+footer{
+    background-color: var(--third-color);
+}
+
+footer input[type ="text"]{
+    background-color: var(--main-color);
+    padding: 15px 15px;
+    border: 0;
+    color: white;
+}
+footer input[type = "text"]::placeholder{
+    color: rgba(255, 255, 255, 0.506);
+    font-size: 13px;
+
+}
+footer input[type ="submit"]{
+    background-color: var(--second-color);
+    color: var(--white-color);
+    right: 5px;
+    top: 5px;
+    border: 0;
+    padding: 10px 20px;
+}
+footer ul li{
+    background-color: var(--main-color);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+footer ul li a{
+    color: var(--second-color);
+    transition: 0.3s;
+    
+}
+footer ul li:hover{
+    background-color: var(--second-color);
+    color: var(--white-color);
+}  
+footer ul li:hover a{
+    color: var(--white-color);
+}
